@@ -1,5 +1,5 @@
 from keys_entity import KeysEntity
-from rsa_data_source_contract import RsaRepositoryContract, RsaDataSourceContract
+from rsa_feature import RsaRepositoryContract, RsaDataSourceContract
 
 
 class RsaRepository(RsaRepositoryContract):

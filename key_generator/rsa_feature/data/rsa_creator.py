@@ -1,5 +1,5 @@
-from data.rsa_key_generator_product import RsaKeyGeneratorProduct
 from cryptography_algorithm_creator import AsymmetricCreator
+from rsa_feature.data import RsaKeyGeneratorProduct
 
 
 class RsaCreator(AsymmetricCreator):

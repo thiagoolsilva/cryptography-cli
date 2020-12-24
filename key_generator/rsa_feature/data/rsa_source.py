@@ -1,7 +1,7 @@
 from keys_entity import KeysEntity
-from rsa_data_source_contract import RsaDataSourceContract
-from data.rsa_creator import RsaCreator
 from cryptography.hazmat.primitives import serialization
+from rsa_feature import RsaDataSourceContract
+from rsa_feature.data.rsa_creator import RsaCreator
 
 
 class RsaSource(RsaDataSourceContract):

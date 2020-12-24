@@ -1,7 +1,13 @@
 import abc
 
-from asymmetric_presenter import AsymmetricPresenterContract
 from keys_entity import KeysEntity
+
+
+class ClientPresentContract:
+
+    @abc.abstractmethod
+    def create_asymmetric_keys(self, supported_algorithm: str):
+        return
 
 
 class ClientViewContract:
@@ -10,9 +16,6 @@ class ClientViewContract:
     def show_keys(self, keys: KeysEntity):
         return
 
-
-class ClientPresentContract:
-
     @abc.abstractmethod
-    def create_algorithm(self, asymmetric_algorithm: AsymmetricPresenterContract):
+    def set_presenter(self, client_presenter_contract: ClientPresentContract):
         return

@@ -1,8 +1,12 @@
-# from asymmetric.rsa.rsa_creator import RsaCreator
-# from key_size.key_length import KeySize
+import click
 
 
-# rsaProduct = RsaCreator()
-# asymmetric_key = rsaProduct.create_product(
-# ).create_asymmetric_key(KeySize.KEY_SIZE_2048.value)
-# print(asymmetric_key)
+@click.command()
+@click.option('--name',  help='number of greetings')
+def hello(name):
+    click.echo('Hello World!')
+    click.echo(name)
+
+
+if __name__ == '__main__':
+    hello()
