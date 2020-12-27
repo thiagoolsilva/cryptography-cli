@@ -1,6 +1,6 @@
+from asymmetric.rsa_feature.user_case.supported_rsa_algorithm import SupportedAsymmetricAlgorithm
 from keys_entity import KeysEntity
-from rsa_feature import RsaRepositoryContract
-from rsa_feature.user_case.supported_rsa_algorithm import SupportedAsymmetricAlgorithm
+from asymmetric.rsa_feature import RsaRepositoryContract
 
 
 class CreateRsaKeyUserCase:

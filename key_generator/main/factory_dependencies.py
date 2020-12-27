@@ -1,8 +1,8 @@
-from asymmetric_algorithm_contract import AsymmetricAlgorithmContract
-from rsa_feature.data import RsaRepository
-from rsa_feature.data.rsa_source import RsaSource
-from rsa_feature.impl.rsa_algorith_impl import RsaAlgorithm
-from rsa_feature.user_case import CreateRsaKeyUserCase
+from asymmetric.asymmetric_algorithm_contract import AsymmetricAlgorithmContract
+from asymmetric.rsa_feature.data import RsaRepository
+from asymmetric.rsa_feature.data.rsa_source import RsaSource
+from asymmetric.rsa_feature.impl import RsaAlgorithm
+from asymmetric.rsa_feature.user_case.create_rsa_keys_use_case import CreateRsaKeyUserCase
 
 SUPPORTED_RSA_ALGORITHM = 'rsa'
 

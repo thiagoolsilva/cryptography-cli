@@ -1,6 +1,6 @@
-from main import Main, MainFactoryDependencies
+from main import MainFactoryDependencies
 from main.presenter import MainPresenter
-from rsa_feature.user_case import SupportedAsymmetricAlgorithm
+from main.view import Main
 
 main = Main()
 rsa_algorithm = MainFactoryDependencies().create_asymmetric_cryptography_dependency('rsa', 2048)

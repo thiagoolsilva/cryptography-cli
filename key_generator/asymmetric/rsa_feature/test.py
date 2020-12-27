@@ -1,5 +1,5 @@
-from rsa_feature.data.rsa_repository import RsaRepository
-from rsa_feature.data.rsa_source import RsaSource
+from asymmetric.rsa_feature.data import RsaRepository
+from asymmetric.rsa_feature.data.rsa_source import RsaSource
 
 rsa_data_source = RsaSource(2048)
 rsa_repository = RsaRepository(rsa_data_source)

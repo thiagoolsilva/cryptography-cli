@@ -1,7 +1,7 @@
-from asymmetric_algorithm_contract import AsymmetricAlgorithmContract
+from asymmetric.asymmetric_algorithm_contract import AsymmetricAlgorithmContract
+from asymmetric.rsa_feature.user_case.supported_rsa_algorithm import SupportedAsymmetricAlgorithm
 from keys_entity import KeysEntity
 from main import ClientViewContract, ClientPresentContract
-from rsa_feature.user_case import SupportedAsymmetricAlgorithm
 
 
 class MainPresenter(ClientPresentContract):
