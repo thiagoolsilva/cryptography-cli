@@ -12,31 +12,13 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-import abc
+class KeysEntity:
+    public_key = None
+    private_key = None
 
-from shared.keys_entity import KeysEntity
+    def __init__(self, public_key, private_key):
+        self.public_key = public_key
+        self.private_key = private_key
 
-
-class RsaDataSourceContract:
-
-    def __init__(self, key_size):
-        self.key_size = key_size
-
-    @abc.abstractmethod
-    def create_open_ssl_keys(self) -> KeysEntity:
-        pass
-
-    @abc.abstractmethod
-    def create_open_ssl_decrypted_keys(self) -> KeysEntity:
-        pass
-
-
-class RsaRepositoryContract:
-
-    @abc.abstractmethod
-    def create_open_ssl_keys(self) -> KeysEntity:
-        pass
-
-    @abc.abstractmethod
-    def create_open_ssl_decrypted_keys(self) -> KeysEntity:
-        pass
+    def __str__(self):
+        return ''.join([self.private_key, '\n', self.public_key])

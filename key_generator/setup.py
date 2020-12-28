@@ -12,19 +12,28 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
+
+from client.build_params import __description__, __license__, __author__, __platform__, __download_url, __app_name__, \
+    __author_email, __long_description, __install_requirements__
+from client.version import __version__
 
 setup(
-    name='key-generator',
-    version='0.1',
+    name=__app_name__,
+    version=__version__,
     packages=find_packages(),
     include_package_data=True,
-    install_requires=[
-        'Click',
-    ],
+    license=__license__,
+    platforms=__platform__,
+    author=__author__,
+    author_email=__author_email,
+    description=__description__,
+    long_description=__long_description,
+    url=__download_url,
+    download_url=__download_url,
+    install_requires=__install_requirements__,
     entry_points='''
         [console_scripts]
-        main=key_generator.client:cli
+        key-generator=client.client_script:start_point
     ''',
 )
-

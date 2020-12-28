@@ -13,7 +13,7 @@
 #  limitations under the License.
 
 from algorithm.asymmetric.rsa_feature import RsaRepositoryContract, RsaDataSourceContract
-from keys_entity import KeysEntity
+from shared.keys_entity import KeysEntity
 
 
 class RsaRepository(RsaRepositoryContract):

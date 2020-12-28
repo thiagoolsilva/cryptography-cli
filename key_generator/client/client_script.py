@@ -23,11 +23,11 @@ from main.view import Main
 @click.option('--algorithm',
               type=click.Choice(['rsa'], case_sensitive=False), required=True, help="Algorithm type")
 @click.option('--key_size',
-              default=2048, required=True, type=int, help="The output format keys.")
+              default=2048, required=True, type=int, help="The output format keys. The default value is 2048")
 @click.option('--format',
               type=click.Choice(['open_ssl', 'decrypted_open_ssl'], case_sensitive=False), required=True,
               help="The output format to be used.")
-def main(algorithm, format, key_size):
+def start_point(algorithm, format, key_size):
     main = Main()
     rsa_algorithm = MainFactoryDependencies().create_asymmetric_cryptography_dependency(algorithm, key_size)
     MainPresenter(main, rsa_algorithm)
@@ -36,4 +36,4 @@ def main(algorithm, format, key_size):
 
 
 if __name__ == '__main__':
-    hello()
+    start_point()

@@ -12,31 +12,4 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-import abc
-
-from shared.keys_entity import KeysEntity
-
-
-class RsaDataSourceContract:
-
-    def __init__(self, key_size):
-        self.key_size = key_size
-
-    @abc.abstractmethod
-    def create_open_ssl_keys(self) -> KeysEntity:
-        pass
-
-    @abc.abstractmethod
-    def create_open_ssl_decrypted_keys(self) -> KeysEntity:
-        pass
-
-
-class RsaRepositoryContract:
-
-    @abc.abstractmethod
-    def create_open_ssl_keys(self) -> KeysEntity:
-        pass
-
-    @abc.abstractmethod
-    def create_open_ssl_decrypted_keys(self) -> KeysEntity:
-        pass
+__version__ = '0.0.1'

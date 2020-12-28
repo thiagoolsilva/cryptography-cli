@@ -14,8 +14,8 @@
 
 from algorithm.asymmetric.asymmetric_algorithm_contract import AsymmetricAlgorithmContract
 from algorithm.asymmetric.supported_asymmetric_algorithm import SupportedAsymmetricAlgorithm
-from keys_entity import KeysEntity
 from main import ClientViewContract, ClientPresentContract
+from shared.keys_entity import KeysEntity
 
 
 class MainPresenter(ClientPresentContract):

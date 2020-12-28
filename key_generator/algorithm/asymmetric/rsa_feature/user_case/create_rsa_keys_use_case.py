@@ -14,7 +14,7 @@
 
 from algorithm.asymmetric.rsa_feature import RsaRepositoryContract
 from algorithm.asymmetric.supported_asymmetric_algorithm import SupportedAsymmetricAlgorithm
-from keys_entity import KeysEntity
+from shared.keys_entity import KeysEntity
 
 
 class CreateRsaKeyUserCase:

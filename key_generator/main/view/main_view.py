@@ -12,12 +12,11 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from keys_entity import KeysEntity
 from main import ClientViewContract, ClientPresentContract
+from shared.keys_entity import KeysEntity
 
 
 class Main(ClientViewContract):
-
     client_presenter: ClientPresentContract
 
     def set_presenter(self, client_presenter: ClientPresentContract):

@@ -16,7 +16,7 @@ from cryptography.hazmat.primitives import serialization
 
 from algorithm.asymmetric.rsa_feature import RsaDataSourceContract
 from algorithm.asymmetric.rsa_feature.data.rsa_creator import RsaCreator
-from keys_entity import KeysEntity
+from shared.keys_entity import KeysEntity
 
 
 class RsaSource(RsaDataSourceContract):
@@ -52,7 +52,7 @@ class RsaSource(RsaDataSourceContract):
 
         rsa_public_key = rsa_core.public_key().public_bytes(
             serialization.Encoding.PEM,
-            serialization.PublicFormat.SubjectPublicKeyInfo)\
+            serialization.PublicFormat.SubjectPublicKeyInfo) \
             .decode("utf-8")
 
         return KeysEntity(rsa_public_key, rsa_private_key)

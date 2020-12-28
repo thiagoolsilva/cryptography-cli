@@ -19,7 +19,7 @@ from algorithm.asymmetric.supported_asymmetric_algorithm import SupportedAsymmet
 
 class RsaAlgorithm(AsymmetricAlgorithmContract):
 
-    def __init__(self,  create_rsa_keys_user_case: CreateRsaKeyUserCase):
+    def __init__(self, create_rsa_keys_user_case: CreateRsaKeyUserCase):
         self.create_rsa_user_case = create_rsa_keys_user_case
 
     def create_keys(self, supported_format: SupportedAsymmetricAlgorithm):
