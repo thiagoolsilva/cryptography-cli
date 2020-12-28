@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e5322f-e148-461d-9c62-27055b254d19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_create_rsa_keys_use_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_key_generator_product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_main_presenter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_rsa_algorithm_impl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_rsa_creator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_rsa_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_rsa_source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrips/create_python3_whl_dist.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrips/run_test_coverage.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrips/run_test_report.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrips/run_tests.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/algorithm/asymmetric/rsa_feature/data/rsa_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/algorithm/asymmetric/rsa_feature/data/rsa_creator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/algorithm/asymmetric/rsa_feature/data/rsa_source.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/algorithm/asymmetric/rsa_feature/data/rsa_source.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/algorithm/asymmetric/rsa_feature/impl/rsa_algorith_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/algorithm/asymmetric/rsa_feature/impl/rsa_algorith_impl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/algorithm/asymmetric/rsa_feature/rsa_data_source_contract.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/algorithm/asymmetric/rsa_feature/rsa_data_source_contract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/client/build_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/client/build_params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/main/presenter/main_presenter.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/main/presenter/main_presenter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +48,8 @@
       <recent name="$PROJECT_DIR$/asymmetric" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_rsa_repository.test_when_call_create_open_ssl_keys_is_expected_to_call_data_source_function">
-    <configuration name="pytest for test_key_generator_product.test_when_create_asymmetric_key_is_expected_to_return_valid_instance" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in tests">
+    <configuration name="pytest for test_rsa_repository.test_when_call_create_open_ssl_decrypted_keys_is_expected_to_call_data_source_function" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="key_generator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,23 +61,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_key_generator_product.test_when_create_asymmetric_key_is_expected_to_return_valid_instance&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_rsa_creator.test_when_call_create_product_is_expected_to_return_rsa_key_generator_product" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="key_generator" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_rsa_creator.test_when_call_create_product_is_expected_to_return_rsa_key_generator_product&quot;" />
+      <option name="_new_target" value="&quot;test_rsa_repository.test_when_call_create_open_ssl_decrypted_keys_is_expected_to_call_data_source_function&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -139,13 +113,29 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="key_generator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in tests" />
+        <item itemvalue="Python tests.pytest for test_rsa_repository.test_when_call_create_open_ssl_decrypted_keys_is_expected_to_call_data_source_function" />
         <item itemvalue="Python tests.pytest for test_rsa_repository.test_when_call_create_open_ssl_keys_is_expected_to_call_data_source_function" />
         <item itemvalue="Python tests.pytest for test_rsa_source.test_when_call_create_open_ssl_decrypted_keys_is_expected_to_return_valid_keys" />
         <item itemvalue="Python tests.pytest for test_rsa_source.test_when_call_create_open_ssl_keys_is_expected_to_return_valid_keys" />
-        <item itemvalue="Python tests.pytest for test_key_generator_product.test_when_create_asymmetric_key_is_expected_to_return_valid_instance" />
-        <item itemvalue="Python tests.pytest for test_rsa_creator.test_when_call_create_product_is_expected_to_return_rsa_key_generator_product" />
       </list>
     </recent_temporary>
   </component>
