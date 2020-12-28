@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e5322f-e148-461d-9c62-27055b254d19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scrips/create_python3_whl_dist.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrips/run_test_coverage.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrips/run_test_report.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrips/run_tests.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/source/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
