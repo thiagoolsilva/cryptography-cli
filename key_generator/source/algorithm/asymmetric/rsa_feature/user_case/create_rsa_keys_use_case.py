@@ -28,5 +28,7 @@ class CreateRsaKeyUserCase:
             rsa_keys = self.rsa_repository.create_open_ssl_keys()
         elif supported_rsa_algorithm == SupportedAsymmetricAlgorithm.decrypted_open_ssl:
             rsa_keys = self.rsa_repository.create_open_ssl_decrypted_keys()
+        else:
+            raise TypeError('asymmetric algorithm not supported.')
 
         return rsa_keys

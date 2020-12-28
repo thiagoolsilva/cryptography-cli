@@ -1,0 +1,4 @@
+click==7.1.2
+rsa==4.6
+cryptography~=3.3.1
+pytest

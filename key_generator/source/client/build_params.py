@@ -12,14 +12,17 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-import os
 import pathlib
-
 import pkg_resources
+import os
+from os.path import dirname, abspath
+from pathlib import Path
 
 
 def load_install_requirements():
-    with pathlib.Path('requirements.txt').open() as requirements_txt:
+    requirements_name = 'requirements.txt'
+
+    with pathlib.Path(requirements_name).open() as requirements_txt:
         install_requires = [
             str(requirement)
             for requirement
@@ -29,11 +32,13 @@ def load_install_requirements():
 
 
 def load_long_description():
-    current_directory = os.path.dirname(os.getcwd())
-    with open(os.path.join(current_directory, 'README.md'), encoding='utf-8') as f:
+    project_path = os.path.dirname(os.getcwd())
+    current_directory = Path(project_path).parent
+    readme_name = 'README.md'
+
+    with open(os.path.join(current_directory, readme_name), encoding='utf-8') as f:
         long_description = f.read()
     return long_description
-
 
 __app_name__ = 'key-generator-cli'
 __description__ = 'it is a CLI program used to generate private and public keys by provided algorithms.'

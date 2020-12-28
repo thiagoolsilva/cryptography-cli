@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="35e5322f-e148-461d-9c62-27055b254d19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/thiago_lopes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/key_generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/key_generator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/asymmetric_algorithm_contract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/data/rsa_creator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/data/rsa_key_generator_product.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/data/rsa_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/data/rsa_source.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/impl/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/impl/rsa_algorith_impl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/rsa_data_source_contract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/user_case/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/user_case/create_rsa_keys_use_case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/asymmetric/supported_asymmetric_algorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/cryptography_algorithm_creator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/cryptography_product.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/build_params.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client_script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/client_contract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/factory_dependencies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/presenter/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/presenter/main_presenter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/view/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/view/main_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/keys_entity.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1m7Oisu0mgfwKVFRc9Kiz7q8ROq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/shared" />
+      <recent name="$PROJECT_DIR$/algorithm/asymmetric" />
+      <recent name="$PROJECT_DIR$/algorithm" />
+      <recent name="$PROJECT_DIR$/asymmetric" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="key_generator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/main/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_dependency_factory.test_when_provided_invalid_key_size_is_expected_to_throws_exception" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="key_generator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_dependency_factory.test_when_provided_invalid_key_size_is_expected_to_throws_exception&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_dependency_factory.test_when_provided_invalid_supported_asymmetric_algorithm_is_expected_to_throws_exception" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="key_generator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_dependency_factory.test_when_provided_invalid_supported_asymmetric_algorithm_is_expected_to_throws_exception&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_dependency_factory.test_when_provided_rsa_algorithm_is_expected_to_return_valid_value" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="key_generator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_dependency_factory.test_when_provided_rsa_algorithm_is_expected_to_return_valid_value&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_dependency_factory.test_when_provided_valid_open_ssl_algorithm_is_expected_to_return_valid_value" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="key_generator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_dependency_factory.test_when_provided_valid_open_ssl_algorithm_is_expected_to_return_valid_value&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python tests.pytest for test_dependency_factory.test_when_provided_valid_open_ssl_algorithm_is_expected_to_return_valid_value" />
+        <item itemvalue="Python tests.pytest for test_dependency_factory.test_when_provided_invalid_supported_asymmetric_algorithm_is_expected_to_throws_exception" />
+        <item itemvalue="Python tests.pytest for test_dependency_factory.test_when_provided_invalid_key_size_is_expected_to_throws_exception" />
+        <item itemvalue="Python tests.pytest for test_dependency_factory.test_when_provided_rsa_algorithm_is_expected_to_return_valid_value" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35e5322f-e148-461d-9c62-27055b254d19" name="Default Changelist" comment="" />
+      <created>1608841292137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608841292137</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm/asymmetric/rsa_feature/__init__.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/test.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
