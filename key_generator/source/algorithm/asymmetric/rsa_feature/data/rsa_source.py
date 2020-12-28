@@ -21,7 +21,7 @@ from shared.keys_entity import KeysEntity
 
 class RsaSource(RsaDataSourceContract):
 
-    def __init__(self, key_size):
+    def __init__(self, key_size: int):
         super().__init__(key_size)
         self.rsa_core = RsaCreator().create_product()
 

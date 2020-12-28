@@ -12,17 +12,25 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from algorithm.asymmetric.asymmetric_algorithm_contract import AsymmetricAlgorithmContract
+from unittest import mock
+from unittest.mock import MagicMock
+
+from algorithm.asymmetric.rsa_feature import RsaRepositoryContract
+from algorithm.asymmetric.rsa_feature.impl import RsaAlgorithm
 from algorithm.asymmetric.rsa_feature.user_case.create_rsa_keys_use_case import CreateRsaKeyUserCase
 from algorithm.asymmetric.supported_asymmetric_algorithm import SupportedAsymmetricAlgorithm
 from shared.keys_entity import KeysEntity
 
-class RsaAlgorithm(AsymmetricAlgorithmContract):
 
-    def __init__(self, create_rsa_keys_user_case: CreateRsaKeyUserCase):
-        self.create_rsa_user_case = create_rsa_keys_user_case
+@mock.patch("algorithm.asymmetric.rsa_feature.user_case.create_rsa_keys_use_case.CreateRsaKeyUserCase.create_keys")
+def test_when_provided_valid_supported_asymmetric_algorithm(create_keys_mock: MagicMock):
+    create_keys_mock.return_value = KeysEntity('public_key', 'private_key')
 
-    def create_keys(self, supported_format: SupportedAsymmetricAlgorithm) -> KeysEntity:
-        rsa_keys = self.create_rsa_user_case.create_keys(supported_format)
+    rsa_repository = RsaRepositoryContract()
+    create_rsa_keys_user_case = CreateRsaKeyUserCase(rsa_repository)
 
-        return rsa_keys
+    rsa_algorithm_impl = RsaAlgorithm(create_rsa_keys_user_case)
+    result_set = rsa_algorithm_impl.create_keys(SupportedAsymmetricAlgorithm.open_ssl)
+
+    create_keys_mock.assert_called_once()
+    assert result_set is not None

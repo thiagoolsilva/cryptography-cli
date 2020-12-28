@@ -32,5 +32,5 @@ class MainPresenter(ClientPresentContract):
             supported_algorithm_enum = SupportedAsymmetricAlgorithm[supported_algorithm]
             keys = self.asymmetric_contract.create_keys(supported_algorithm_enum)
 
-        if self.client_view_contract:
+        if self.client_view_contract and keys is not None:
             self.client_view_contract.show_keys(keys)

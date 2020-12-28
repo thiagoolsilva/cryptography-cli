@@ -19,7 +19,7 @@ from shared.keys_entity import KeysEntity
 
 class RsaDataSourceContract:
 
-    def __init__(self, key_size):
+    def __init__(self, key_size: int):
         self.key_size = key_size
 
     @abc.abstractmethod

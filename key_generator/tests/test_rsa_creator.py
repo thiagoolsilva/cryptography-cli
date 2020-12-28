@@ -12,12 +12,14 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-
 from algorithm.asymmetric.rsa_feature.data import RsaKeyGeneratorProduct
-from algorithm.cryptography_algorithm_creator import AsymmetricCreator
+from algorithm.asymmetric.rsa_feature.data.rsa_creator import RsaCreator
 
 
-class RsaCreator(AsymmetricCreator):
+def test_when_call_create_product_is_expected_to_return_rsa_key_generator_product():
 
-    def create_product(self):
-        return RsaKeyGeneratorProduct()
+    rsa_creator = RsaCreator()
+    rsa_product = rsa_creator.create_product()
+
+    assert type(rsa_product) is RsaKeyGeneratorProduct
+
