@@ -12,24 +12,17 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-import abc
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives.asymmetric import rsa
 
-from keys_entity import KeysEntity
-
-
-class ClientPresentContract:
-
-    @abc.abstractmethod
-    def create_asymmetric_keys(self, supported_algorithm: str):
-        return
+from algorithm.cryptography_product import AsymmetricProduct
 
 
-class ClientViewContract:
+class RsaKeyGeneratorProduct(AsymmetricProduct):
 
-    @abc.abstractmethod
-    def show_keys(self, keys: KeysEntity):
-        return
+    def create_asymmetric_key(self, key_size):
+        default_exponent = 65537
+        private_rsa_key = rsa.generate_private_key(
+            default_exponent, key_size, default_backend())
 
-    @abc.abstractmethod
-    def set_presenter(self, client_presenter_contract: ClientPresentContract):
-        return
+        return private_rsa_key

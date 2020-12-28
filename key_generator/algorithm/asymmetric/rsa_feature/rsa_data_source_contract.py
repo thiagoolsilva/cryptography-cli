@@ -17,19 +17,26 @@ import abc
 from keys_entity import KeysEntity
 
 
-class ClientPresentContract:
+class RsaDataSourceContract:
+
+    def __init__(self, key_size):
+        self.key_size = key_size
 
     @abc.abstractmethod
-    def create_asymmetric_keys(self, supported_algorithm: str):
-        return
-
-
-class ClientViewContract:
+    def create_open_ssl_keys(self) -> KeysEntity:
+        pass
 
     @abc.abstractmethod
-    def show_keys(self, keys: KeysEntity):
-        return
+    def create_open_ssl_decrypted_keys(self) -> KeysEntity:
+        pass
+
+
+class RsaRepositoryContract:
 
     @abc.abstractmethod
-    def set_presenter(self, client_presenter_contract: ClientPresentContract):
-        return
+    def create_open_ssl_keys(self) -> KeysEntity:
+        pass
+
+    @abc.abstractmethod
+    def create_open_ssl_decrypted_keys(self) -> KeysEntity:
+        pass

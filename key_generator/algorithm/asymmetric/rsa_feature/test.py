@@ -12,24 +12,13 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-import abc
+from algorithm.asymmetric.rsa_feature.data import RsaRepository
+from algorithm.asymmetric.rsa_feature.data.rsa_source import RsaSource
 
-from keys_entity import KeysEntity
+rsa_data_source = RsaSource(2048)
+rsa_repository = RsaRepository(rsa_data_source)
 
+keys = rsa_repository.create_open_ssl_keys()
 
-class ClientPresentContract:
-
-    @abc.abstractmethod
-    def create_asymmetric_keys(self, supported_algorithm: str):
-        return
-
-
-class ClientViewContract:
-
-    @abc.abstractmethod
-    def show_keys(self, keys: KeysEntity):
-        return
-
-    @abc.abstractmethod
-    def set_presenter(self, client_presenter_contract: ClientPresentContract):
-        return
+print(keys.private_key)
+print(keys.public_key)

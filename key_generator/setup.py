@@ -12,24 +12,19 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-import abc
+from setuptools import setup, find_packages
 
-from keys_entity import KeysEntity
+setup(
+    name='key-generator',
+    version='0.1',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        'Click',
+    ],
+    entry_points='''
+        [console_scripts]
+        main=key_generator.client:cli
+    ''',
+)
 
-
-class ClientPresentContract:
-
-    @abc.abstractmethod
-    def create_asymmetric_keys(self, supported_algorithm: str):
-        return
-
-
-class ClientViewContract:
-
-    @abc.abstractmethod
-    def show_keys(self, keys: KeysEntity):
-        return
-
-    @abc.abstractmethod
-    def set_presenter(self, client_presenter_contract: ClientPresentContract):
-        return
