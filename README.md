@@ -1,5 +1,14 @@
+<img alt="Icon" src="misc/app_icon.png?raw=true" align="left" hspace="1" vspace="1">
+
+# cryptography-cli
+
+[![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-0D47A1.svg?style=flat-square)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Python](https://img.shields.io/badge/python-%3E%3D3.5-brightgreen)](https://www.python.org/downloads/release/python-350/)
 [![CI status](https://github.com/thiagoolsilva/cryptography-cli/workflows/CI/badge.svg)](https://github.com/thiagoolsilva/cryptography-cli/actions?queryworkflow%3ACI+event%3Apush+branch%3Amain)
-[![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=true)](http://www.apache.org/licenses/LICENSE-2.0)
+
+</br>
+
+## Description
 
 The project aims to help users to create PEM keys using a specific cryptography algorithm.
 
@@ -111,7 +120,6 @@ tests/test_rsa_source.py                                                        
 TOTAL                                                                             292     10    97%
 
 ============================== 15 passed in 0.24s ==============================
-
 ```
 
 # Pre-Installation Requirements:

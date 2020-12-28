@@ -24,6 +24,5 @@ PARENT_DIRECTORY="${DIR%/*}"
 # go to parent folder
 cd ${PARENT_DIRECTORY} 
 
-
 # run all unit tests
 pytest --cov=. tests/
