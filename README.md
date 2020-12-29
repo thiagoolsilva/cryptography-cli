@@ -1,5 +1,14 @@
+<img alt="Icon" src="misc/app_icon.png?raw=true" align="left" hspace="1" vspace="1">
+
+# cryptography-cli
+
+[![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-0D47A1.svg?style=flat-square)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Python](https://img.shields.io/badge/python-%3E%3D3.5-brightgreen)](https://www.python.org/downloads/release/python-350/)
 [![CI status](https://github.com/thiagoolsilva/cryptography-cli/workflows/CI/badge.svg)](https://github.com/thiagoolsilva/cryptography-cli/actions?queryworkflow%3ACI+event%3Apush+branch%3Amain)
-[![License Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=true)](http://www.apache.org/licenses/LICENSE-2.0)
+
+</br>
+
+## Description
 
 The project aims to help users to create PEM keys using a specific cryptography algorithm.
 
@@ -19,6 +28,98 @@ Options:
   --help                          Show this message and exit.
 
 Enjoy the program!
+```
+
+## Architecture
+
+The application uses the design pattern MVP with the concepts of [clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html). To do it I've used the package feature pattern and separated it as displayed below.
+
+<img src="misc/cryptography-cli.png" width="600"/>
+
+
+## Tech-stack
+
+| Technology   	| Description   	|
+|---	|---	|
+| [cryptography](https://cryptography.io/en/latest/) 	| Perform cryptography operations   	|
+| [click](https://click.palletsprojects.com/en/5.x/quickstart/) 	| Click is a Python package for creating beautiful command line interfaces   	|
+| [pytest](https://docs.pytest.org/en/stable/) 	| The pytest framework makes it easy to write small tests   	|
+| [pytest-cov](https://pypi.org/project/pytest-cov/) 	| This plugin produces coverage tests reports   	|
+| [pytest-html](https://pypi.org/project/pytest-html/) 	| This plugin produces a html tests reports   	|
+| [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) 	| It is a framework that helps developers to mock, stub and spy the code under test. |
+
+## Characteristics
+
+This project brings to table set of best practices, tools, and solutions:
+
+* MVP + clean architecture
+* 100% [python](https://www.python.org/)
+* Package feature pattern
+* Testing (coverage + unit testing)
+* CI integration by github actions
+* static code analyse - TBD
+
+## Test coverage
+
+### key-generator module
+
+The module `key-generator` has 97% code coverage.
+
+```
+============================= test session starts ==============================
+platform linux -- Python 3.9.1, pytest-6.2.1, py-1.10.0, pluggy-0.12.0
+plugins: metadata-1.11.0, cov-2.10.1, pylama-7.7.1, html-3.1.1
+collected 15 items
+
+tests/test_create_rsa_keys_use_case.py ...                               [ 20%]
+tests/test_dependency_factory.py ....                                    [ 46%]
+tests/test_key_generator_product.py .                                    [ 53%]
+tests/test_main_presenter.py .                                           [ 60%]
+tests/test_rsa_algorithm_impl.py .                                       [ 66%]
+tests/test_rsa_creator.py .                                              [ 73%]
+tests/test_rsa_repository.py ..                                          [ 86%]
+tests/test_rsa_source.py ..                                              [100%]
+
+----------- coverage: platform linux, python 3.9.1-final-0 -----------
+Name                                                                            Stmts   Miss  Cover
+---------------------------------------------------------------------------------------------------
+source/algorithm/__init__.py                                                        0      0   100%
+source/algorithm/asymmetric/__init__.py                                             0      0   100%
+source/algorithm/asymmetric/asymmetric_algorithm_contract.py                        7      1    86%
+source/algorithm/asymmetric/rsa_feature/__init__.py                                 1      0   100%
+source/algorithm/asymmetric/rsa_feature/data/__init__.py                            2      0   100%
+source/algorithm/asymmetric/rsa_feature/data/rsa_creator.py                         5      0   100%
+source/algorithm/asymmetric/rsa_feature/data/rsa_key_generator_product.py           8      0   100%
+source/algorithm/asymmetric/rsa_feature/data/rsa_repository.py                      9      0   100%
+source/algorithm/asymmetric/rsa_feature/data/rsa_source.py                         20      0   100%
+source/algorithm/asymmetric/rsa_feature/impl/__init__.py                            1      0   100%
+source/algorithm/asymmetric/rsa_feature/impl/rsa_algorith_impl.py                  10      0   100%
+source/algorithm/asymmetric/rsa_feature/rsa_data_source_contract.py                18      4    78%
+source/algorithm/asymmetric/rsa_feature/user_case/__init__.py                       0      0   100%
+source/algorithm/asymmetric/rsa_feature/user_case/create_rsa_keys_use_case.py      14      0   100%
+source/algorithm/asymmetric/supported_asymmetric_algorithm.py                       4      0   100%
+source/algorithm/cryptography_algorithm_creator.py                                  5      1    80%
+source/algorithm/cryptography_product.py                                            5      1    80%
+source/main/__init__.py                                                             2      0   100%
+source/main/client_contract.py                                                     13      2    85%
+source/main/factory_dependencies.py                                                18      0   100%
+source/main/presenter/__init__.py                                                   1      0   100%
+source/main/presenter/main_presenter.py                                            16      0   100%
+source/shared/__init__.py                                                           0      0   100%
+source/shared/keys_entity.py                                                        8      1    88%
+tests/__init__.py                                                                   0      0   100%
+tests/test_create_rsa_keys_use_case.py                                             32      0   100%
+tests/test_dependency_factory.py                                                   21      0   100%
+tests/test_key_generator_product.py                                                 5      0   100%
+tests/test_main_presenter.py                                                       16      0   100%
+tests/test_rsa_algorithm_impl.py                                                   16      0   100%
+tests/test_rsa_creator.py                                                           6      0   100%
+tests/test_rsa_repository.py                                                       16      0   100%
+tests/test_rsa_source.py                                                           13      0   100%
+---------------------------------------------------------------------------------------------------
+TOTAL                                                                             292     10    97%
+
+============================== 15 passed in 0.24s ==============================
 ```
 
 # Pre-Installation Requirements:
