@@ -52,7 +52,7 @@ The application uses the design pattern MVP with the concepts of [clean architec
 
 This project brings to table set of best practices, tools, and solutions:
 
-* MVP + clean architecture
+* [MVP](https://pt.wikipedia.org/wiki/Model-view-presenter) + [clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 * 100% [python](https://www.python.org/)
 * Package feature pattern
 * Testing (coverage + unit testing)
