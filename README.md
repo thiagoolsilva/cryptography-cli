@@ -48,6 +48,11 @@ The application uses the design pattern MVP with the concepts of [clean architec
 | [pytest-html](https://pypi.org/project/pytest-html/) 	| This plugin produces a html tests reports   	|
 | [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) 	| It is a framework that helps developers to mock, stub and spy the code under test. |
 
+## Development environment
+| Technology   	| Description   	|
+|---	|---	|
+| [pyCharm](https://www.jetbrains.com/pycharm/download/#section=linux) 	| The python IDE   	|
+
 ## Characteristics
 
 This project brings to table set of best practices, tools, and solutions:
